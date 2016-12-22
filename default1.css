@@ -432,7 +432,8 @@
 	
 	#main {
 	    overflow: hidden;
-	    padding: 3em 50px 5em 50px;
+		height: 1200px;
+	    padding: 5px 5px 5px 5px;
 	    background: #FFF;
 	    text-align: center;
 	}

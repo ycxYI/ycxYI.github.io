@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>scrollLeft([val])-- jQuery 1.8 api 中文版</title>
+<link type="text/css" rel="stylesheet" href="style/style.css"  />
+<meta name="keywords" content="jQuery 1.8 api 中文版, jQuery api 中文版,jQuery 中文手册,jQuery api 1.8 chm 下载, jQuery api  1.8  chm 中文版,jQuery 1.8中文参考手册,jQuery api 1.8.1, jQuery api  1.8.1  chm 中文版,jQuery 1.8.1 中文手册jQuery  1.8.2 api,jQ  1.8.1 api 中文版,jQ  1.8.1 chm 中文手册"> 
+<meta name="description" content="jQuery 1.8 api 中文版, jQuery api chm  中文版,jQuery 中文手册,jQuery api 1.8 下载, jQuery api  1.8  chm 中文版,jQuery 1.8 中文手册,jQuery api 1.8.1, jQuery api  1.8.1 中文版,jQuery 1.8.1 中文手册,jQuery  1.8.2 api,jQ  1.8.1 api 中文版,jQ  1.8.1 中文手册,jQuery Version 1.8  api 中文版,jQuery 1.8  中文api (适用jQuery 1.8和jQuery 1.8.1)">
+<meta name="Language" content="zh-CN">
+<meta name="Copyright" content="www.jq-school.com">
+<meta name="Designer" content="www.jq-school.com">
+<meta name="robots" content="index,follow">
+<meta name="googlebot" content="index,follow,archive">
+<link rel="shortcut icon" type="image/x-icon" href="http://www.jq-school.com/favicon.ico">
+<link rel="icon" type="image/x-icon" href="http://www.jq-school.com/favicon.ico"> 
+<link rel="Bookmark" type="image/x-icon"  href="http://www.jq-school.com/favicon.ico">
+</head>
+<body id="split">
+<div id="content">
+  
+  <div rel="scrollLeft">
+    <h2><span>返回值:Integer</span>scrollLeft([val])</h2>
+    <h3>概述</h3>
+    <div class="desc">
+      <p>获取匹配元素相对滚动条左侧的偏移。</p>
+      <div class="longdesc">
+        <p>此方法对可见和隐藏元素均有效。</p>
+      </div>
+    </div>
+        <h3>参数</h3>
+    <div>
+      <h4><strong>val</strong><span>String, Number</span><em>V1.2.6</em></h4>
+      <p>设定水平滚动条值</p>
+    </div>
+    <div class="example">
+      <h3>示例</h3>
+      <span id="f_ad2"></span>
+      <h4>无参数描述:</h4>
+      <p>获取第一段相对滚动条左侧的偏移</p>
+      <h5>HTML 代码:</h5>
+      <pre><code>&lt;p&gt;Hello&lt;/p&gt;&lt;p&gt;2nd Paragraph&lt;/p&gt;</code></pre>
+      <h5>jQuery 代码:</h5>
+      <pre><code>var p = $("p:first");
+$("p:last").text( "scrollLeft:" + p.scrollLeft() );</code></pre>
+      <h5>结果:</h5>
+      <pre><code>&lt;p&gt;Hello&lt;/p&gt;&lt;p&gt;scrollLeft: 0&lt;/p&gt;</code></pre>
+            <h4>参数val 描述:</h4>
+      <p>设置相对滚动条左侧的偏移</p>
+      <h5>jQuery 代码:</h5>
+      <pre><code>$("div.demo").scrollLeft(300);</code></pre>
+    </div>
+  </div>
+</div>
+<div class="copyright"><a href="http://www.jq-school.com/" target="_blank" title="JquerySchool">&copy; 2013 Jquery学堂</a></div>
+
+</div>
+</body>
+</html>

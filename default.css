@@ -433,9 +433,10 @@
 	#main {
 	    overflow: hidden;
 	    float: right;
-	    height: 800px;
-	    width: 850px;
-	    padding: 3em 0px 0px 50px;
+	    height: 1200px;
+	    width: 900px;
+	    padding: 0px;
+		
 	    background: #FFF;
 	    border-top: 6px solid #2980b9;
 	    text-align: center;
@@ -489,4 +490,13 @@
 	    display: block;
 	    color: #000;
 	    background: red;
+	}
+footer{
+	text-align: center;
+	color:#FFF;
+	margin: 5px 0px 5px 0px;
+}
+
+	footer a{
+		text-decoration: none;
 	}

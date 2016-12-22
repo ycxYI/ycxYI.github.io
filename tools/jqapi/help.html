@@ -1,0 +1,628 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>jQuery 1.7.1 速查表</title>
+<meta name="Keywords" content="jQuery中文aPI手册,jQuery速查手册,jQuery最新版CHM下载,jQuery最新中文版,jQuery最新中文参考手册" />
+<meta name="Description" content="jQuery 1.7.1 CHM下载,jQuery中文参考手册,jQuery中文版1.7.1参考手册,jQuery 1.7.1 速查表,jQuery中文参考手册"/>
+<script type="text/javascript" src="js/jquery.js"></script>
+<style type="text/css">
+body {margin: 2px;height:auto;}
+iframe {margin:0px;padding:0px;}
+h1, h2, h3, ul, li {font-size: 11px;font-weight: normal;padding:0;margin:0;list-style:none;font-family:Verdana, Tahoma, arial, sans-serif, "宋体";line-height: 1.2;}
+h1 {margin-bottom: 3px;font-size: 11px;}
+h2 {background: rgb(79,129,189);color:#eee;padding: 2px 5px;}
+h3 {color: #666;padding-top: 2px;}
+h2, h3 {font-size: 12px;}
+ul {margin:0 0 5px 10px;}
+ul ul {margin:0 0 0 10px;}
+div.col {width: 206px;height:auto;overflow:hidden;margin-right: 2px;}
+a, a:link, a:visited {color:rgb(64,112,170);text-decoration: none;}
+a:hover {color:white;background: rgb(79,129,189);}
+.col>div:hover {background:rgb(232,238,247);}
+#book {clear:both;width:988px;}
+#h_ad2 {font-size:12px;}
+ul li ul li{color: #4070AA;}
+sup{ color:#CC3300;font-size: 9px;line-height: 8px;}
+</style>
+</head>
+<body>
+<!--<h1>jQuery 1.7.1 速查表 -- <a target="mainFrame" href="http://www.hemin.cn/">hemin</a>, 原作:<a target="mainFrame" href="http://www.gscottolson.com/weblog/2008/01/11/jquery-cheat-sheet/">G. Scott Olson</a></h1>-->
+<div class="col">
+  <div id="core">
+    <h2>核心</h2>
+    <ul>
+      <li>
+        <h3>jQuery 核心函数</h3>
+        <ul>
+          <li><a target="mainFrame" href="jQuery_selector_context.html">jQuery([sel,[context]])</a>
+          <li><a target="mainFrame" href="jQuery_html_ownerDocument.html">jQuery(html,[ownerDoc])</a></li>
+          <li><a target="mainFrame" href="jQuery_callback.html">jQuery(callback)</a></li>
+        </ul>
+      </li>
+      <li>
+        <h3>jQuery 对象访问</h3>
+        <ul>
+          <li><a target="mainFrame" href="each.html">each(callback)</a></li>
+          <li><a target="mainFrame" href="size.html">size()</a></li>
+          <li><a target="mainFrame" href="length.html">length</a></li>
+          <li><a target="mainFrame" href="selector.html">selector</a></li>
+          <li><a target="mainFrame" href="context.html">context</a></li>
+          <li><a target="mainFrame" href="get.html">get([index])</a></li>
+          <li><a target="mainFrame" href="index.html">index([selector|element])</a></li>
+        </ul>
+      </li>
+      <li>
+        <h3>数据缓存</h3>
+        <ul>
+          <li><a target="mainFrame" href="data.html">data([key],[value])</a></li>
+          <li><a target="mainFrame" href="removeData.html">removeData([name|list])</a><sup>1.7*</sup></li>
+          <li><a target="mainFrame" href="jQuery.data.html">$.data(element,[key],[value])</a></li>
+        </ul>
+      </li>
+      <li>
+        <h3>队列控制</h3>
+        <ul>
+          <li><a target="mainFrame" href="queue.html">queue(element,[queueName])</a></li>
+          <li><a target="mainFrame" href="dequeue.html">dequeue([queueName])</a></li>
+          <li><a target="mainFrame" href="clearQueue.html">clearQueue([queueName])</a></li>
+        </ul>
+      </li>
+      <li>
+        <h3>插件机制</h3>
+        <ul>
+          <li><a target="mainFrame" href="jQuery.fn.extend.html">jQuery.fn.extend(object)</a></li>
+          <li><a target="mainFrame" href="jQuery.extend_object.html">jQuery.extend(object)</a></li>
+        </ul>
+      </li>
+      <li>
+        <h3>多库共存</h3>
+        <ul>
+          <li><a target="mainFrame" href="jQuery.noConflict.html">jQuery.noConflict([ex])</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div id="attributes">
+    <h2>属性</h2>
+    <ul>
+      <li>
+        <h3>属性</h3>
+        <ul>
+          <li><a target="mainFrame" href="attr.html">attr(name|pro|key,val|fn)</a></li>
+          <li><a target="mainFrame" href="removeAttr.html">removeAttr(name)</a></li>
+          <li><a target="mainFrame" href="prop.html">prop(name|pro|key,val|fn)</a><sup>1.6+</sup></li>
+          <li><a target="mainFrame" href="removeProp.html">removeProp(name)</a><sup>1.6+</sup></li>
+        </ul>
+      </li>
+      <li>
+        <h3>CSS 类</h3>
+        <ul>
+          <li><a target="mainFrame" href="addClass.html">addClass(class|fn)</a></li>
+          <li><a target="mainFrame" href="removeClass.html">removeClass([class|fn])</a></li>
+          <li><a target="mainFrame" href="toggleClass.html">toggleClass(class|fn[,sw])</a></li>
+        </ul>
+      </li>
+      <li>
+        <h3>HTML代码/文本/值</h3>
+        <ul>
+          <li><a target="mainFrame" href="html.html">html([val|fn])</a></li>
+          <li><a target="mainFrame" href="text.html">text([val|fn])</a></li>
+          <li><a target="mainFrame" href="val.html">text([val|fn|arr])</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div id="css">
+    <h2>CSS</h2>
+    <ul>
+      <li>
+        <h3>CSS</h3>
+        <ul>
+          <li><a target="mainFrame" href="css.html">css(name|pro|[,val|fn])</a></li>
+        </ul>
+      </li>
+      <li>
+        <h3>位置</h3>
+        <ul>
+          <li><a target="mainFrame" href="offset.html">offset([coordinates])</a></li>
+          <li><a target="mainFrame" href="position.html">position()</a></li>
+          <li><a target="mainFrame" href="scrollTop.html">scrollTop([val])</a></li>
+          <li><a target="mainFrame" href="scrollLeft.html">scrollLeft([val])</a></li>
+        </ul>
+      </li>
+      <li>
+        <h3>尺寸</h3>
+        <ul>
+          <li><a target="mainFrame" href="height.html">heigh([val|fn])</a></li>
+          <li><a target="mainFrame" href="width.html">width([val|fn])</a></li>
+          <li><a target="mainFrame" href="innerHeight.html">innerHeight()</a></li>
+          <li><a target="mainFrame" href="innerWidth.html">innerWidth()</a></li>
+          <li><a target="mainFrame" href="outerHeight.html">outerHeight([soptions])</a></li>
+          <li><a target="mainFrame" href="outerWidth.html">outerWidth([options])</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+</div>
+<br />
+<div class="col">
+  <div id="selectors">
+    <h2>选择器</h2>
+    <ul>
+      <li>
+        <h3>基本</h3>
+        <ul>
+          <li><a target="mainFrame" href="id.html">#id</a></li>
+          <li><a target="mainFrame" href="element.html">element</a></li>
+          <li><a target="mainFrame" href="class.html">.class</a></li>
+          <li><a target="mainFrame" href="all.html">*</a></li>
+          <li><a target="mainFrame" href="multiple.html">selector1,selector2,selectorN</a></li>
+        </ul>
+      </li>
+      <li>
+        <h3>层级</h3>
+        <ul>
+          <li><a target="mainFrame" href="descendant.html">ancestor descendant</a></li>
+          <li><a target="mainFrame" href="child.html">parent &gt;  child</a></li>
+          <li><a target="mainFrame" href="next_1.html">prev + next</a></li>
+          <li><a target="mainFrame" href="siblings_1.html">prev ~ siblings</a></li>
+        </ul>
+      </li>
+      <li>
+        <h3>基本</h3>
+        <ul>
+          <li><a target="mainFrame" href="first_1.html">:first</a></li>
+          <li><a target="mainFrame" href="last_1.html">:last</a></li>
+          <li><a target="mainFrame" href="not_1.html">:not(selector)</a></li>
+          <li><a target="mainFrame" href="even.html">:even</a></li>
+          <li><a target="mainFrame" href="odd.html">:odd</a></li>
+          <li><a target="mainFrame" href="eq_1.html">:eq(index)</a></li>
+          <li><a target="mainFrame" href="gt.html">:gt(index)</a></li>
+          <li><a target="mainFrame" href="lt.html">:lt(index)</a></li>
+          <li><a target="mainFrame" href="header.html">:header</a></li>
+          <li><a target="mainFrame" href="animated.html">:animated</a></li>
+          <li><a target="mainFrame" href="focus_1.html">:focus</a><sup>1.6+</sup></li>
+        </ul>
+      </li>
+      <li>
+        <h3>内容</h3>
+        <ul>
+          <li><a target="mainFrame" href="contains.html">:contains(text)</a></li>
+          <li><a target="mainFrame" href="empty_1.html">:empty</a></li>
+          <li><a target="mainFrame" href="has_1.html">:has(selector)</a></li>
+          <li><a target="mainFrame" href="parent_1.html">:parent</a></li>
+        </ul>
+      </li>
+      <li>
+        <h3>可见性</h3>
+        <ul>
+          <li><a target="mainFrame" href="hidden_1.html">:hidden</a></li>
+          <li><a target="mainFrame" href="visible.html">:visible</a></li>
+        </ul>
+      </li>
+      <li>
+        <h3>属性</h3>
+        <ul>
+          <li><a target="mainFrame" href="attributeHas.html">[attribute]</a></li>
+          <li><a target="mainFrame" href="attributeEquals.html">[attribute=value]</a></li>
+          <li><a target="mainFrame" href="attributeNotEqual.html">[attribute!=value]</a></li>
+          <li><a target="mainFrame" href="attributeStartsWith.html">[attribute^=value]</a></li>
+          <li><a target="mainFrame" href="attributeEndsWith.html">[attribute$=value]</a></li>
+          <li><a target="mainFrame" href="attributeContains.html">[attribute*=value]</a></li>
+          <li><a target="mainFrame" href="attributeMultiple.html">[attrSel1][attrSel2][attrSelN]</a></li>
+        </ul>
+      </li>
+      <li>
+        <h3>子元素</h3>
+        <ul>
+          <li><a target="mainFrame" href="nthChild.html">:nth-child</a></li>
+          <li><a target="mainFrame" href="firstChild.html">:first-child</a></li>
+          <li><a target="mainFrame" href="lastChild.html">:last-child</a></li>
+          <li><a target="mainFrame" href="onlyChild.html">:only-child</a></li>
+        </ul>
+      </li>
+      <li>
+        <h3>表单</h3>
+        <ul>
+          <li><a target="mainFrame" href="input.html">:input</a></li>
+          <li><a target="mainFrame" href="text_1.html">:text</a></li>
+          <li><a target="mainFrame" href="password.html">:password</a></li>
+          <li><a target="mainFrame" href="radio.html">:radio</a></li>
+          <li><a target="mainFrame" href="checkbox.html">:checkbox</a></li>
+          <li><a target="mainFrame" href="submit_1.html">:submit</a></li>
+          <li><a target="mainFrame" href="image.html">:image</a></li>
+          <li><a target="mainFrame" href="reset.html">:reset</a></li>
+          <li><a target="mainFrame" href="button.html">:button</a></li>
+          <li><a target="mainFrame" href="file.html">:file</a></li>
+          <li><a target="mainFrame" href="hidden_1.html">:hidden</a></li>
+        </ul>
+      </li>
+      <li>
+        <h3>表单对象属性</h3>
+        <ul>
+          <li><a target="mainFrame" href="enabled.html">:enabled</a></li>
+          <li><a target="mainFrame" href="disabled.html">:disabled</a></li>
+          <li><a target="mainFrame" href="checked.html">:checked</a></li>
+          <li><a target="mainFrame" href="selected.html">:selected</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="col">
+  <div id="manipulation">
+    <h2>文档处理</h2>
+    <ul>
+      <li>
+        <h3>内部插入</h3>
+        <ul>
+          <li><a target="mainFrame" href="append.html">append(content|fn)</a></li>
+          <li><a target="mainFrame" href="appendTo.html">appendTo(content)</a></li>
+          <li><a target="mainFrame" href="prepend.html">prepend(content|fn)</a></li>
+          <li><a target="mainFrame" href="prependTo.html">prependTo(content)</a></li>
+        </ul>
+      </li>
+      <li>
+        <h3>外部插入</h3>
+        <ul>
+          <li><a target="mainFrame" href="after.html">after(content|fn)</a></li>
+          <li><a target="mainFrame" href="before.html">before(content|fn)</a></li>
+          <li><a target="mainFrame" href="insertAfter.html">insertAfter(content)</a></li>
+          <li><a target="mainFrame" href="insertBefore.html">insertBefore(content)</a></li>
+        </ul>
+      </li>
+      <li>
+        <h3>包裹</h3>
+        <ul>
+          <li><a target="mainFrame" href="wrap.html">wrap(html|ele|fn)</a></li>
+          <li><a target="mainFrame" href="unwrap.html">unwrap()</a></li>
+          <li><a target="mainFrame" href="wrapAll.html">wrapall(html|ele)</a></li>
+          <li><a target="mainFrame" href="wrapInner.html">wrapInner(html|ele|fn)</a></li>
+        </ul>
+      </li>
+      <li>
+        <h3>替换</h3>
+        <ul>
+          <li><a target="mainFrame" href="replaceWith.html">replaceWith(content|fn)</a></li>
+          <li><a target="mainFrame" href="replaceAll.html">replaceAll(selector)</a></li>
+        </ul>
+      </li>
+      <li>
+        <h3>删除</h3>
+        <ul>
+          <li><a target="mainFrame" href="empty.html">empty()</a></li>
+          <li><a target="mainFrame" href="remove.html">remove([expr])</a></li>
+          <li><a target="mainFrame" href="detach.html">detach([expr])</a></li>
+        </ul>
+      </li>
+      <li>
+        <h3>复制</h3>
+        <ul>
+          <li><a target="mainFrame" href="clone.html">clone([Even[,deepEven]])</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div id="traversing">
+    <h2>筛选</h2>
+    <ul>
+      <li>
+        <h3>过滤</h3>
+        <ul>
+          <li><a target="mainFrame" href="eq.html">eq(index|-index)</a></li>
+          <li><a target="mainFrame" href="first.html">first()</a></li>
+          <li><a target="mainFrame" href="last.html">last()</a></li>
+          <li><a target="mainFrame" href="hasClass.html">hasClass(class)</a></li>
+          <li><a target="mainFrame" href="filter.html">filter(expr|obj|ele|fn)</a></li>
+          <li><a target="mainFrame" href="is.html">is(expr|obj|ele|fn)</a><sup>1.6*</sup></li>
+          <li><a target="mainFrame" href="map.html">map(callback)</a></li>
+          <li><a target="mainFrame" href="has.html">has(expr|ele)</a></li>
+          <li><a target="mainFrame" href="not.html">not(expr|ele|fn)</a></li>
+          <li><a target="mainFrame" href="slice.html">slice(start,[end])</a></li>
+        </ul>
+      </li>
+      <li>
+        <h3>查找</h3>
+        <ul>
+          <li><a target="mainFrame" href="children.html">children([expr])</a></li>
+          <li><a target="mainFrame" href="closest.html">closest(expr,[con]|obj|ele)</a><sup>1.6*</sup></li>
+          <li><a target="mainFrame" href="find.html">find(expr|obj|ele)</a></li>
+          <li><a target="mainFrame" href="next.html">next([expr])</a></li>
+          <li><a target="mainFrame" href="nextAll.html">nextall([expr])</a></li>
+          <li><a target="mainFrame" href="nextUntil.html">nextUntil([exp|ele][,fil])</a><sup>1.6*</sup></li>
+          <li><a target="mainFrame" href="offsetParent.html">offsetParent()</a></li>
+          <li><a target="mainFrame" href="parent.html">parent([expr])</a></li>
+          <li><a target="mainFrame" href="parents.html">parents([expr])</a></li>
+          <li><a target="mainFrame" href="parentsUntil.html">parentsUntil([exp|ele][,fil])</a><sup>1.6*</sup></li>
+          <li><a target="mainFrame" href="prev.html">prev([expr])</a></li>
+          <li><a target="mainFrame" href="prevAll.html">prevall([expr])</a></li>
+          <li><a target="mainFrame" href="prevUntil.html">prevUntil([exp|ele][,fil])</a><sup>1.6*</sup></li>
+          <li><a target="mainFrame" href="siblings.html">siblings([expr])</a></li>
+        </ul>
+      </li>
+      <li>
+        <h3>串联</h3>
+        <ul>
+          <li><a target="mainFrame" href="add.html">add(expr|ele|html|obj[,con])</a></li>
+          <li><a target="mainFrame" href="andSelf.html">andSelf()</a></li>
+          <li><a target="mainFrame" href="contents.html">contents()</a></li>
+          <li><a target="mainFrame" href="end.html">end()</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="col">
+  <div id="events">
+    <h2>事件</h2>
+    <ul>
+      <li>
+        <h3>页面载入</h3>
+        <ul>
+          <li><a target="mainFrame" href="ready.html">ready(fn)</a></li>
+        </ul>
+      </li>
+      <li>
+        <h3>事件处理</h3>
+        <ul>
+        <li><a target="mainFrame" href="on.html">on(eve,[sel],[data],fn)</a><sup>1.7+</sup></li>
+        <li><a target="mainFrame" href="off.html">off(eve,[sel],[fn])</a><sup>1.7+</sup></li>
+          <li><a target="mainFrame" href="bind.html">bind(type,[data],fn)</a></li>
+          <li><a target="mainFrame" href="one.html">one(type,[data],fn)</a></li>
+          <li><a target="mainFrame" href="trigger.html">trigger(type,[data])</a></li>
+          <li><a target="mainFrame" href="triggerHandler.html">triggerHandler(type, [data])</a></li>
+          <li><a target="mainFrame" href="unbind.html">unbind(type,[data|fn])</a></li>
+        </ul>
+      </li>
+      <li>
+        <h3>事件委派</h3>
+        <ul>
+          <li><a target="mainFrame" href="live.html">live(type,[data],fn)</a></li>
+          <li><a target="mainFrame" href="die.html">die(type,[fn])</a></li>
+          <li><a target="mainFrame" href="delegate.html">delegate(sel,[type],[data],fn) </a></li>
+          <li><a target="mainFrame" href="undelegate.html">undelegate([sel,[type],fn]) </a><sup>1.6*</sup></li>
+        </ul>
+      </li>
+      <li>
+        <h3>事件切换</h3>
+        <ul>
+          <li><a target="mainFrame" href="hover.html">hover([over,]out)</a></li>
+          <li><a target="mainFrame" href="toggle.html">toggle(fn, fn2, [fn3, fn4, ...])</a></li>
+        </ul>
+      </li>
+      <li>
+        <h3>事件</h3>
+        <ul>
+          <li><a target="mainFrame" href="blur.html">blur([[data],fn])</a></li>
+          <li><a target="mainFrame" href="change.html">change([[data],fn])</a></li>
+          <li><a target="mainFrame" href="click.html">click([[data],fn])</a></li>
+          <li><a target="mainFrame" href="dblclick.html">dblclick([[data],fn])</a></li>
+          <li><a target="mainFrame" href="error.html">error([[data],fn])</a></li>
+          <li><a target="mainFrame" href="focus.html">focus([[data],fn])</a></li>
+          <li><a target="mainFrame" href="focusin.html">focusin([data],fn)</a></li>
+          <li><a target="mainFrame" href="focusout.html">focusout([data],fn)</a></li>
+          <li><a target="mainFrame" href="keydown.html">keydown([[data],fn])</a></li>
+          <li><a target="mainFrame" href="keypress.html">keypress([[data],fn])</a></li>
+          <li><a target="mainFrame" href="keyup.html">keyup([[data],fn])</a></li>
+          <li><a target="mainFrame" href="mousedown.html">mousedown([[data],fn])</a></li>
+          <li><a target="mainFrame" href="mouseenter.html">mouseenter([[data],fn])</a></li>
+          <li><a target="mainFrame" href="mouseleave.html">mouseleave([[data],fn])</a></li>
+          <li><a target="mainFrame" href="mousemove.html">mousemove([[data],fn])</a></li>
+          <li><a target="mainFrame" href="mouseout.html">mouseout([[data],fn])</a></li>
+          <li><a target="mainFrame" href="mouseover.html">mouseover([[data],fn])</a></li>
+          <li><a target="mainFrame" href="mouseup.html">mouseup([[data],fn])</a></li>
+          <li><a target="mainFrame" href="resize.html">resize([[data],fn])</a></li>
+          <li><a target="mainFrame" href="scroll.html">scroll([[data],fn])</a></li>
+          <li><a target="mainFrame" href="select.html">select([[data],fn])</a></li>
+          <li><a target="mainFrame" href="submit.html">submit([[data],fn])</a></li>
+          <li><a target="mainFrame" href="unload.html">unload([[data],fn])</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div id="effects">
+    <h2>效果</h2>
+    <ul>
+      <li>
+        <h3>基本</h3>
+        <ul>
+          <li><a target="mainFrame" href="show.html">show([speed,[easing],[fn]])</a></li>
+          <li><a target="mainFrame" href="hide.html">hide([speed,[easing],[fn]])</a></li>
+          <li><a target="mainFrame" href="toggle.html">toggle([speed],[easing],[fn])</a></li>
+        </ul>
+      </li>
+      <li>
+        <h3>滑动</h3>
+        <ul>
+          <li><a target="mainFrame" href="slideDown.html">slideDown([spe],[eas],[fn])</a></li>
+          <li><a target="mainFrame" href="slideUp.html">slideUp([speed,[easing],[fn]])</a></li>
+          <li><a target="mainFrame" href="slideToggle.html">slideToggle([speed],[easing],[fn])</a></li>
+        </ul>
+      </li>
+      <li>
+        <h3>淡入淡出</h3>
+        <ul>
+          <li><a target="mainFrame" href="fadeIn.html">fadeIn([speed],[eas],[fn])</a></li>
+          <li><a target="mainFrame" href="fadeOut.html">fadeOut([speed],[eas],[fn])</a></li>
+          <li><a target="mainFrame" href="fadeTo.html">fadeTo([[spe],opa,[eas],[fn]])</a></li>
+          <li><a target="mainFrame" href="fadeToggle.html">fadeToggle([speed,[eas],[fn]])</a></li>
+        </ul>
+      </li>
+      <li>
+        <h3>自定义</h3>
+        <ul>
+          <li><a target="mainFrame" href="animate.html">animate(param,[spe],[e],[fn])</a></li>
+          <li><a target="mainFrame" href="stop.html">stop([cle],[jum])</a><sup>1.7*</sup></li>
+          <li><a target="mainFrame" href="delay.html">delay(duration,[queueName])</a></li>
+        </ul>
+      <li>
+        <h3>设置</h3>
+        <ul>
+          <li><a target="mainFrame" href="jQuery.fx.off.html">jQuery.fx.off</a></li>
+          <li><a target="mainFrame" href="jQuery.fx.interval.html">jQuery.fx.interval</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="col">
+  <div id="ajax">
+    <h2>ajax</h2>
+    <ul>
+      <li>
+        <h3>ajax 请求</h3>
+        <ul>
+          <li><a target="mainFrame" href="jQuery.ajax.html">$.ajax(url,[settings])</a></li>
+          <li><a target="mainFrame" href="load.html">load(url,[data],[callback])</a></li>
+          <li><a target="mainFrame" href="jQuery.get.html">$.get(url,[data],[fn],[type])</a></li>
+          <li><a target="mainFrame" href="jQuery.getJSON.html">$.getJSON(url,[data],[fn])</a></li>
+          <li><a target="mainFrame" href="jQuery.getScript.html">$.getScript(url,[callback])</a></li>
+          <li><a target="mainFrame" href="jQuery.post.html">$.post(url,[data],[fn],[type])</a></li>
+        </ul>
+      </li>
+      <li>
+        <h3>ajax 事件</h3>
+        <ul>
+          <li><a target="mainFrame" href="ajaxComplete.html">ajaxComplete(callback)</a></li>
+          <li><a target="mainFrame" href="ajaxError.html">ajaxError(callback)</a></li>
+          <li><a target="mainFrame" href="ajaxSend.html">ajaxSend(callback)</a></li>
+          <li><a target="mainFrame" href="ajaxStart.html">ajaxStart(callback)</a></li>
+          <li><a target="mainFrame" href="ajaxStop.html">ajaxStop(callback)</a></li>
+          <li><a target="mainFrame" href="ajaxSuccess.html">ajaxSuccess(callback)</a></li>
+        </ul>
+      </li>
+      <li>
+        <h3>其它</h3>
+        <ul>
+          <li><a target="mainFrame" href="jQuery.ajaxSetup.html">$.ajaxSetup([options])</a></li>
+          <li><a target="mainFrame" href="serialize.html">serialize()</a></li>
+          <li><a target="mainFrame" href="serializearray.html">serializearray()</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  
+  <div id="utilities">
+    <h2>工具</h2>
+    <ul>
+      <li>
+        <h3>浏览器及特性检测</h3>
+        <ul>
+          <li><a target="mainFrame" href="jQuery.support.html">$.support</a></li>
+          <li><a target="mainFrame" href="jQuery.browser.html">$.browser</a></li>
+          <li><a target="mainFrame" href="jQuery.browser.version.html">$.browser.version</a></li>
+          <li><a target="mainFrame" href="jQuery.boxModel.html">$.boxModel</a></li>
+        </ul>
+      </li>
+      <li>
+        <h3>数组和对象操作</h3>
+        <ul>
+          <li><a target="mainFrame" href="jQuery.each.html">$.each(object,[callback])</a></li>
+          <li><a target="mainFrame" href="jQuery.extend.html">$.extend([d],tgt,obj1,[objN])</a></li>
+          <li><a target="mainFrame" href="jQuery.grep.html">$.grep(array,fn,[invert])</a></li>
+          <li><a target="mainFrame" href="jQuery.makeArray.html">$.makearray(obj)</a></li>
+          <li><a target="mainFrame" href="jQuery.map.html">$.map(arr|obj,callback)</a><sup>1.6*</sup></li>
+          <li><a target="mainFrame" href="jQuery.inArray.html">$.inarray(val,arr,[from])</a></li>
+          <li><a target="mainFrame" href="jQuery.toarray.html">$.toarray()</a></li>
+          <li><a target="mainFrame" href="jQuery.merge.html">$.merge(first,second)</a></li>
+          <li><a target="mainFrame" href="jQuery.unique.html">$.unique(array)</a></li>
+          <li><a target="mainFrame" href="jQuery.parseJSON.html">$.parseJSON(json)</a></li>
+        </ul>
+      </li>
+      <li>
+        <h3>函数操作</h3>
+        <ul>
+          <li><a target="mainFrame" href="jQuery.noop.html">$.noop</a>
+          <li><a target="mainFrame" href="jQuery.proxy.html">$.proxy(function,context)</a></li>
+        </ul>
+      <li>
+        <h3>测试操作</h3>
+        <ul>
+          <li><a target="mainFrame" href="jQuery.contains.html">$.contains(container,contained)</a></li>
+          <li><a target="mainFrame" href="jQuery.type.html">$.type(obj)</a></li>
+          <li><a target="mainFrame" href="jQuery.isArray.html">$.isarray(obj)</a></li>
+          <li><a target="mainFrame" href="jQuery.isFunction.html">$.isFunction(obj)</a></li>
+          <li><a target="mainFrame" href="jQuery.isEmptyObject.html">$.isEmptyObject(obj)</a></li>
+          <li><a target="mainFrame" href="jQuery.isPlainObject.html">$.isPlainObject(obj)</a></li>
+          <li><a target="mainFrame" href="jQuery.isWindow.html">$.isWindow(obj)</a></li>
+          <li><a target="mainFrame" href="jQuery.isNumeric.html">$.isNumeric(value)</a><sup>1.7+</sup></li>
+        </ul>
+      </li>
+      <li>
+        <h3>字符串操作</h3>
+        <ul>
+          <li><a target="mainFrame" href="jQuery.trim.html">$.trim(str)</a></li>
+        </ul>
+      </li>
+      <li>
+        <h3>URL</h3>
+        <ul>
+          <li><a target="mainFrame" href="jQuery.param.html">$.param(obj,[traditional])</a></li>
+        </ul>
+      </li>
+      <li>
+        <h3>插件编写</h3>
+        <ul>
+          <li><a target="mainFrame" href="jQuery.error.html">$.error(message)</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+    <div id="about">
+    	<h2>关于</h2>
+	    <ul>
+	      <li><a target="mainFrame" href="about.html">关于此jQuery中文文档</a></li>
+	      <li><a target="mainFrame" href="bugandUpdate.html">提交bug及获取更新</a></li>
+	    </ul>
+    </div>
+</div>
+<div class="col">
+  <div id="Deferred">
+	  <h2>Deferred</h2>
+	  <ul>
+	    <li><a target="mainFrame" href="deferred.done.html">def.done(donCal,[donCal])</a></li>
+	    <li><a target="mainFrame" href="deferred.fail.html">def.fail(failCallbacks)</a></li>
+	    <li><a target="mainFrame" href="deferred.isRejected.html">def.isRejected()</a></li>
+	    <li><a target="mainFrame" href="deferred.isResolved.html">def.isResolved()</a></li>
+	    <li><a target="mainFrame" href="deferred.reject.html">def.reject(args)</a></li>
+	    <li><a target="mainFrame" href="deferred.rejectWith.html">def.rejectWith(context,[args])</a></li>
+	    <li><a target="mainFrame" href="deferred.resolve.html">def.resolve(args)</a></li>
+	    <li><a target="mainFrame" href="deferred.resolveWith.html">def.resolveWith(context,[args])</a></li>
+	    <li><a target="mainFrame" href="deferred.then.html">def.then(doneCal,failCals)</a></li>
+	    <li><a target="mainFrame" href="deferred.promise.html">def.promise([type],[target])</a><sup>1.6+</sup></li>
+	    <li><a target="mainFrame" href="deferred.pipe.html">def.pipe([donl],[fai],[pro])</a><sup>1.7*</sup></li>
+	    <li><a target="mainFrame" href="deferred.always.html">def.always(alwCal,[alwCal])</a><sup>1.6+</sup></li>
+        <li><a target="mainFrame" href="deferred.notify.html">def.notify(args)</a><sup>1.7+</sup></li>
+	    <li><a target="mainFrame" href="deferred.notifyWith.html">def.notifyWith(con,[args])</a><sup>1.7+</sup></li>
+	    <li><a target="mainFrame" href="deferred.progress.html">def.progress(proCal)</a><sup>1.7+</sup></li>
+
+	    <li><a target="mainFrame" href="deferred.state.html">def.state()</a><sup>1.7+</sup></li>
+	  </ul>
+	</div>
+  <div id="Callbacks">
+	  <h2>Callbacks</h2>
+	  <ul>
+	    <li><a target="mainFrame" href="callbacks.add.html">cal.add(callbacks)</a><sup>1.7+</sup></li>
+	    <li><a target="mainFrame" href="callbacks.disable.html">cal.disable()</a><sup>1.7+</sup></li>
+	    <li><a target="mainFrame" href="callbacks.empty.html">cal.empty()</a><sup>1.7+</sup></li>
+	    <li><a target="mainFrame" href="callbacks.fire.html">cal.fire(arguments)</a><sup>1.7+</sup></li>
+	    <li><a target="mainFrame" href="callbacks.fired.html">cal.fired()</a><sup>1.7+</sup></li>
+	    <li><a target="mainFrame" href="callbacks.fireWith.html">cal.fireWith([context] [, args])</a><sup>1.7+</sup></li>
+	    <li><a target="mainFrame" href="callbacks.has.html">cal.has(callback)</a><sup>1.7+</sup></li>
+	    <li><a target="mainFrame" href="callbacks.lock.html">cal.lock()</a><sup>1.7+</sup></li>
+	    <li><a target="mainFrame" href="callbacks.locked.html">cal.locked()</a><sup>1.7+</sup></li>
+	    <li><a target="mainFrame" href="callbacks.remove.html">cal.remove(callbacks)</a><sup>1.7+</sup></li>
+	    <li><a target="mainFrame" href="jQuery.callbacks.html">$.callbacks(flags)</a><sup>1.7+</sup></li>
+	  </ul>
+	</div>
+  <div id="Other">
+	  <h2>其它</h2>
+	  <ul>
+	    <li><a target="mainFrame" href="regexp.html">正则表达式</a></li>
+	  </ul>
+	</div>
+</div>
+</body>
+</html>

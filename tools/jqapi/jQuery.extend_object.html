@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>jQuery.extend(object)-- jQuery 1.8 api 中文版</title>
+<link type="text/css" rel="stylesheet" href="style/style.css"  />
+<meta name="keywords" content="jQuery 1.8 api 中文版, jQuery api 中文版,jQuery 中文手册,jQuery api 1.8 chm 下载, jQuery api  1.8  chm 中文版,jQuery 1.8中文参考手册,jQuery api 1.8.1, jQuery api  1.8.1  chm 中文版,jQuery 1.8.1 中文手册jQuery  1.8.2 api,jQ  1.8.1 api 中文版,jQ  1.8.1 chm 中文手册"> 
+<meta name="description" content="jQuery 1.8 api 中文版, jQuery api chm  中文版,jQuery 中文手册,jQuery api 1.8 下载, jQuery api  1.8  chm 中文版,jQuery 1.8 中文手册,jQuery api 1.8.1, jQuery api  1.8.1 中文版,jQuery 1.8.1 中文手册,jQuery  1.8.2 api,jQ  1.8.1 api 中文版,jQ  1.8.1 中文手册,jQuery Version 1.8  api 中文版,jQuery 1.8  中文api (适用jQuery 1.8和jQuery 1.8.1)">
+<meta name="Language" content="zh-CN">
+<meta name="Copyright" content="www.jq-school.com">
+<meta name="Designer" content="www.jq-school.com">
+<meta name="robots" content="index,follow">
+<meta name="googlebot" content="index,follow,archive">
+<link rel="shortcut icon" type="image/x-icon" href="http://www.jq-school.com/favicon.ico">
+<link rel="icon" type="image/x-icon" href="http://www.jq-school.com/favicon.ico"> 
+<link rel="Bookmark" type="image/x-icon"  href="http://www.jq-school.com/favicon.ico">
+</head>
+<body id="split">
+<div id="content">
+  
+  <div rel="jQuery.extend">
+    <h2><span>返回值:jQuery</span>jQuery.extend(object)</h2>
+    <h3>概述</h3>
+    <div class="desc">
+      <p>扩展jQuery对象本身。</p>
+      <div class="longdesc">
+        <p>用来在jQuery命名空间上增加新函数。 查看 'jQuery.fn.extend' 获取更多添加<a href="http://docs.jquery.com/Plugins/Authoring" title="Plugins/Authoring">插件</a>的信息。</p>
+      </div>
+    </div>
+    <h3>参数</h3>
+    <div>
+      <h4><strong>object</strong><span>Object</span><em>V1.0</em></h4>
+      <p>用以扩展 jQuery 对象</p>
+    </div>
+    <div class="example">
+      <h3>示例</h3>
+      <span id="f_ad2"></span>
+      <h4>描述:</h4>
+      <p>在jQuery命名空间上增加两个函数。</p>
+      <h5>jQuery 代码:</h5>
+      <pre><code>jQuery.extend({
+  min: function(a, b) { return a &lt; b ? a : b; },
+  max: function(a, b) { return a &gt; b ? a : b; }
+});</code></pre>
+      <h5>结果:</h5>
+      <pre><code>jQuery.min(2,3); // =&gt; 2
+jQuery.max(4,5); // =&gt; 5</code></pre>
+    </div>
+  </div>
+</div>
+<div class="copyright"><a href="http://www.jq-school.com/" target="_blank" title="JquerySchool">&copy; 2013 Jquery学堂</a></div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>deferred.fail(failCallbacks[,failCallbacks])-- jQuery 1.8 api 中文版</title>
+<link type="text/css" rel="stylesheet" href="style/style.css"  />
+<meta name="keywords" content="jQuery 1.8 api 中文版, jQuery api 中文版,jQuery 中文手册,jQuery api 1.8 chm 下载, jQuery api  1.8  chm 中文版,jQuery 1.8中文参考手册,jQuery api 1.8.1, jQuery api  1.8.1  chm 中文版,jQuery 1.8.1 中文手册jQuery  1.8.2 api,jQ  1.8.1 api 中文版,jQ  1.8.1 chm 中文手册"> 
+<meta name="description" content="jQuery 1.8 api 中文版, jQuery api chm  中文版,jQuery 中文手册,jQuery api 1.8 下载, jQuery api  1.8  chm 中文版,jQuery 1.8 中文手册,jQuery api 1.8.1, jQuery api  1.8.1 中文版,jQuery 1.8.1 中文手册,jQuery  1.8.2 api,jQ  1.8.1 api 中文版,jQ  1.8.1 中文手册,jQuery Version 1.8  api 中文版,jQuery 1.8  中文api (适用jQuery 1.8和jQuery 1.8.1)">
+<meta name="Language" content="zh-CN">
+<meta name="Copyright" content="www.jq-school.com">
+<meta name="Designer" content="www.jq-school.com">
+<meta name="robots" content="index,follow">
+<meta name="googlebot" content="index,follow,archive">
+<link rel="shortcut icon" type="image/x-icon" href="http://www.jq-school.com/favicon.ico">
+<link rel="icon" type="image/x-icon" href="http://www.jq-school.com/favicon.ico"> 
+<link rel="Bookmark" type="image/x-icon"  href="http://www.jq-school.com/favicon.ico">
+</head>
+<body id="split">
+<div id="content">
+  <div rel="deferred.fail">
+    <h2><span>返回值:Deferred Object</span>deferred.fail(failCallbacks[,failCallbacks])</h2>
+    <h3>概述</h3>
+    <div class="desc">
+      <p>当延迟失败时调用一个函数或者数组函数.。</p>
+      <div class="longdesc">
+        <p>该参数可以是一个函数或一个函数的数组。当延迟失败时，doneCallbacks被调用。回调执行是依照他们添加的顺序。一旦deferred.fail()返回延迟对象，延迟对象的其它方法也可以链接到了这里，包括增加.done()方法。当延迟解决，doneCallbacks执行使用参数提供给<a href="deferred.reject.html" title="jQuery 1.8 api 中文版 - julying.com">resolve</a>或<a href="deferred.rejectWith.html" title="jQuery 1.8 api 中文版 - julying.com">resolveWith</a>方法依照添加的顺序调用。有关详细信息，请参阅<a href="http://api.jquery.com/category/deferred-object/" title="jQuery 1.8 api 中文版 - julying.com">Deferred object</a> 。</p>
+      </div>
+    </div>
+    <h3>参数</h3>
+    <div>
+      <h4><strong>failCallbacks</strong><span>Function/Array</span><em>V1.5</em></h4>
+      <p>一个函数或者数组函数，延迟失败时调用</p>
+      <h4><strong>failCallbacks</strong><span>Function/Array</span><em>V1.5</em></h4>
+      <p>附加可选的函数或数组函数，延迟失败时调用</p>
+    </div>
+    <div class="example">
+      <h3>示例</h3>
+      <span id="f_ad2"></span>
+      <h4>描述:</h4>
+      <p>一旦jQuery.get方法返回一个jqXHR对象，这是从一个递延所得，可以附加的成功和失败回调使用deferrred.done()和deferred.fail()方法。</p>
+      <h5>jQuery 代码:</h5>
+      <pre><code>$.get("test.php")
+  .done(function(){ alert("$.get succeeded"); })//延迟成功
+  .fail(function(){ alert("$.get failed!"); });//延迟失败</code></pre>
+    </div>
+  </div>
+</div>
+<div class="copyright"><a href="http://www.jq-school.com/" target="_blank" title="JquerySchool">&copy; 2013 Jquery学堂</a></div>
+
+</div>
+</body>
+</html>
