@@ -5,9 +5,12 @@
 		<title>个人主页-易十三的网页工具</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		
 		<script src="js/jquery.js" type="text/javascript"></script>
 		<script src="js/list.page.js"></script>
+		<script src="js/list.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/list.js" type="text/javascript" charset="utf-8"></script>
+		
 	</head>
 	<body>
 		<div id="container">
@@ -21,22 +24,22 @@
 		     		<div class="c1">
 		       			<h2>工具列表</h2>
 		        		<div id="lovely-things-list">
-		            		<input class="search" placeholder="搜索jq/js/css/api" />
+		            		<input class="search" placeholder="搜索需要的工具" />
 		         			<ul class="sort-by">
 					            <li class="sort btn" data-sort="name">Sort by name</li>
-					            <li class="sort btn" data-sort="category">Sort by category</li>
+					            <!--<li class="sort btn" data-sort="category">Sort by category</li>-->
 					        </ul>
-					        <ul class="filter">
+					        <!--<ul class="filter">
 					            <li class="btn" id="filter-none">Show all</li>
 					            <li class="btn" id="filter-games">Only show games</li>
 					            <li class="btn" id="filter-beverages">Only show beverages</li>
-					        </ul>
-		         			<ul class="list">
+					        </ul>-->
+		         			<ul id="dark-pagination" class="list">
 				            	<li>
-									<a href="#">
+									<a href="http://ycxyi.github.io/RMMV-F1/">
 					                <img src="img/a1.png" class="thumb" />
-					                <h4><span class="name">jQuery: jQuery</span> <span class="category">api</span></h4>
-				            		<p class="description">网页形式chm的jQuery api，来源于jQueryschool收集获取的api文档，收集全面，界面简洁，方便简单查阅，版本为1.8.1 。</p>
+					                <h4><span class="name">RPGmakerMV: F1开发</span> <span class="category">文档</span></h4>
+				            		<p class="description">网页形式chm的RPGmakerMV: F1开发文档，来源于喵呜喵5大大的食用文档，收集全面，界面简洁，方便简单查阅，文字已汉化，如有错误可反馈。</p>
 									</a>
 				            	</li>
 						        <li>
@@ -61,7 +64,7 @@
 									</a>
 				            	</li>
 				    		</ul>
-							<!--<ul class="pagination" id="pagenum"></ul>-->
+							<!--<ul style="font-size:18px;list-style-type:none;" class="pagination" id="pagenum"></ul>-->
 		 				</div>
 						 
 					</div>
@@ -73,11 +76,11 @@
 	
 </html>
 <script type="text/javascript">
-var monkeyList = new List('lovely-things-list', {
-	  valueNames: ['name'],
-	  page: 5,
-	  plugins: [ ListPagination({}) ] 
-	});
+// var monkeyList = new List('lovely-things-list', {
+// 	  valueNames: ['name'],
+// 	  page: 2,
+// 	  plugins: [ ListPagination({}) ] 
+// 	});
 	var options = {
     		valueNames: [ 'name', 'description', 'category' ]
 			
