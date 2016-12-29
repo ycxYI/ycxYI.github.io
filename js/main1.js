@@ -8,11 +8,11 @@
 
                  
          $(this).addClass('current_page_item');                      // 添加当前元素的样式
-
+function getVer() {
+    return "1.1";
+}
              
      });
-
-      
 
 
  }); 
